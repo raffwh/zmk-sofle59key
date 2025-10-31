@@ -21,10 +21,10 @@
 1. Go  to  Github repo and navigate to the "Actions" tab.
 1.  Select the completed workflow shown above around the red square.  Then download the zip folder and extract the contents. 
 1.  For the next process make sure both halves are powered on the entire time.
-- Plug in the left half of the keyboard.  Once plugged in, press the physical reset button twice that is located on the sides of each half. This will put the keyboard into bootloader mode and open a new directory on your computer.
--    Open the new directory and drag and drop the **Settings_reset** file. 
--    Now unplug the left half and plug in the right half.  Press the reset button twice. Drag and drop the same **Settings_reset** file shown with the green box into the right half keyboard directory.
--    Now plug in the left half of the keyboard again.  Drag and drop **sofle_left nice_view** .
--    Now unplug the left half and plug in the right half. Press the reset button twice.  Drag and drop the **sofle_right-nice_nano**.
--    Now you need to go to your computer or device and find your bluetooth device history list.  You should see a sofle device thats not connected or maybe its even showing its connected then disconnects.  You need to delete this from your device list.
--    Pair the keyboard as a new device
+  - Plug in the left half of the keyboard.  Once plugged in, press the physical reset button twice that is located on the sides of each half. This will put the keyboard into bootloader mode and open a new directory on your computer.
+  -    Open the new directory and drag and drop the `**Settings_reset**` file. 
+  -    Now unplug the left half and plug in the right half.  Press the reset button twice. Drag and drop the same `**Settings_reset**` file shown with the green box into the right half keyboard directory.
+  -    Now plug in the left half of the keyboard again.  Drag and drop **`sofle_left nice_view`** .
+  -    Now unplug the left half and plug in the right half. Press the reset button twice.  Drag and drop the **`sofle_right-nice_nano`**.
+  -    Now you need to go to your computer or device and find your bluetooth device history list.  You should see a sofle device thats not connected or maybe its even showing its connected then disconnects.  You need to delete this from your device list.
+  -    Pair the keyboard as a new device
