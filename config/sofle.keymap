@@ -93,11 +93,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&kp LEFT_ALT    &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                           &kp F6          &kp F7         &kp F8          &kp F9                &kp F10                &kp F11
-&kt LEFT_SHIFT  &trans  &trans  &trans  &trans  &trans                           &kp PIPE        &kp BACKSLASH  &kp ASTRK       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp F12
-&trans          &trans  &trans  &trans  &trans  &trans                           &kp MINUS       &kp EQUAL      &kp ASTRK       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans
-&trans          &trans  &trans  &trans  &trans  &trans  &kp BACKSPACE    &trans  &kp UNDERSCORE  &kp PLUS       &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp GRAVE              &trans
-                        &trans  &trans  &trans  &trans  &trans           &trans  &trans          &trans         &trans          &trans
+&kp LEFT_ALT    &kp F1         &kp F2            &kp F3                &kp F4                 &kp F5                              &kp F6          &kp F7         &kp F8          &kp F9                &kp F10                &kp F11
+&kt LEFT_SHIFT  &kp TILDE      &kp GRAVE         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS                            &kp PIPE        &kp BACKSLASH  &kp ASTRK       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp F12
+&trans          &kp PIPE       &kp BACKSLASH     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp MINUS                           &kp MINUS       &kp EQUAL      &kp ASTRK       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans
+&trans          &kp LESS_THAN  &kp GREATER_THAN  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp EQUAL  &kp BACKSPACE    &trans  &kp UNDERSCORE  &kp PLUS       &kp LEFT_BRACE  &kp RIGHT_BRACE       &trans                 &trans
+                               &trans            &trans                &trans                 &kp UNDER  &trans           &trans  &trans          &trans         &trans          &trans
             >;
 
             sensor-bindings =
@@ -138,11 +138,11 @@
 
             display-name = "adjust";
             bindings = <
-&bt BT_CLR_ALL     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                 &none  &none           &none           &none            &none  &none
-&ext_power EP_TOG  &none         &none         &none         &none         &studio_unlock                               &none  &none           &mmv MOVE_UP    &none            &none  &none
-&none              &none         &none         &mkp LCLK     &mkp RCLK     &none                                        &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none  &none
-&none              &none         &none         &none         &none         &caps_word      &kp LC(LA(DELETE))    &none  &none  &none           &none           &none            &none  &none
-                                 &none         &none         &none         &none           &none                 &none  &none  &none           &none           &none
+&bt BT_CLR_ALL     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                 &none           &none           &none           &none            &none  &none
+&ext_power EP_TOG  &none         &none         &none         &none         &studio_unlock                               &msc SCRL_UP    &none           &mmv MOVE_UP    &none            &none  &none
+&none              &none         &none         &mkp LCLK     &mkp RCLK     &none                                        &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none  &none
+&none              &none         &none         &none         &none         &caps_word      &kp LC(LA(DELETE))    &none  &none           &none           &none           &none            &none  &none
+                                 &none         &none         &none         &none           &none                 &none  &none           &none           &none           &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
