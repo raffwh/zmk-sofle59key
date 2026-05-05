@@ -66,7 +66,7 @@
 &kp TAB           &kp Q   &kp W     &kp E     &kp R      &kp T                               &kp Y      &kp U      &kp I          &kp O    &kp P     &kp SQT
 &kp LEFT_SHIFT    &kp A   &kp S     &kp D     &kp F      &kp G                               &kp H      &kp J      &kp K          &kp L    &kp SEMI  &kp ENTER
 &kp LEFT_CONTROL  &kp Z   &kp X     &kp C     &kp V      &kp B      &kp EQUAL    &kp C_MUTE  &kp N      &kp M      &kp COMMA      &kp DOT  &kp FSLH  &kp RSHFT
-                          &kp LGUI  &kp LALT  &kp LCTRL  &kp SPACE  &mo 1        &tog 2      &kp SPACE  &kp RCTRL  &kp BACKSPACE  &kp DEL
+                          &kp LGUI  &kp LALT  &kp LCTRL  &kp SPACE  &mo 1        &mo 2       &kp SPACE  &kp RCTRL  &kp BACKSPACE  &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -83,18 +83,18 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&tog 1         &kp F1         &kp F2     &kp F3        &kp F4       &kp F5                            &kp F6     &kp F7              &kp F8    &kp F9         &kp F10     &kp F11
-&kp LC(RIGHT)  &kp BACKSPACE  &kp HOME   &kp UP_ARROW  &kp END      &kp DELETE                        &kp PG_UP  &none               &kp UP    &none          &none       &kp F12
-&kp CLCK       &kp LALT       &kp LEFT   &kp DOWN      &kp RIGHT    &kp PRINTSCREEN                   &kp PG_DN  &kp LEFT            &kp DOWN  &kp RIGHT      &kp DEL     &kp BSPC
-&trans         &kp K_UNDO     &kp K_CUT  &kp K_COPY    &kp K_PASTE  &kp PRINTSCREEN  &none    &trans  &none      &kp LC(LEFT_ARROW)  &none     &kp LC(RIGHT)  &kp INSERT  &trans
-                              &trans     &trans        &trans       &key_repeat      &to 0    &none   &trans     &trans              &trans    &trans
+&to 1          &kp F1         &kp F2     &kp F3        &kp F4       &kp F5                            &kp F6     &kp F7              &kp F8    &kp F9             &kp F10     &kp F11
+&kp LC(RIGHT)  &kp BACKSPACE  &kp HOME   &kp UP_ARROW  &kp END      &kp DELETE                        &kp PG_UP  &kp LC(LG(LEFT))    &kp UP    &kp LG(LC(RIGHT))  &none       &kp F12
+&kp CLCK       &kp LALT       &kp LEFT   &kp DOWN      &kp RIGHT    &kp PRINTSCREEN                   &kp PG_DN  &kp LEFT            &kp DOWN  &kp RIGHT          &kp DEL     &kp BSPC
+&trans         &kp K_UNDO     &kp K_CUT  &kp K_COPY    &kp K_PASTE  &kp PRINTSCREEN  &none    &trans  &none      &kp LC(LEFT_ARROW)  &none     &kp LC(RIGHT)      &kp INSERT  &trans
+                              &trans     &trans        &trans       &trans           &to 0    &none   &trans     &trans              &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
         symbol_layer {
-            display-name = "lower";
+            display-name = "sym";
 
             // TODO: Some binds are waiting for shifted keycode support.
             // ------------------------------------------------------------------------------------------------------------
@@ -105,11 +105,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&tog 2  &kp F1     &kp F2         &kp F3                &kp F4                 &kp F5                      &kp F6         &kp F7           &kp F8           &kp F9           &kp F10       &kp F11
-&trans  &kp TILDE  &kp GRAVE      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS                    &kp ASTRK      &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_CLEAR  &kp F12
-&trans  &kp PIPE   &kp BACKSLASH  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp EQUAL                   &kp PERIOD     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp COMMA     &trans
-&trans  &kp UNDER  &none          &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp MINUS  &none    &trans  &kp COMMA      &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp SLASH     &trans
-                   &trans         &kp LESS_THAN         &kp GREATER_THAN       &trans     &none    &to 0   &kp RIGHT_ALT  &kp KP_NUMBER_0  &trans           &trans
+&to 2   &kp EXCLAMATION  &kp AT_SIGN    &kp HASH              &kp DOLLAR             &kp PERCENT                   &kp CARET      &kp AMPERSAND    &kp ASTERISK     &trans           &trans        &trans
+&trans  &kp TILDE        &kp GRAVE      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS                      &kp ASTRK      &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_CLEAR  &trans
+&trans  &kp PIPE         &kp BACKSLASH  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp EQUAL                     &kp PERIOD     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp COMMA     &trans
+&trans  &kp UNDER        &none          &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp MINUS    &none    &trans  &kp COMMA      &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp SLASH     &trans
+                         &trans         &kp LESS_THAN         &kp GREATER_THAN       &trans       &none    &to 0   &kp RIGHT_ALT  &kp KP_NUMBER_0  &trans           &trans
             >;
 
             sensor-bindings =
@@ -127,11 +127,11 @@
 
             display-name = "adjust";
             bindings = <
-&bt BT_CLR_ALL     &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3     &bt BT_SEL 4                     &none          &none      &none           &none      &none  &none
-&ext_power EP_TOG  &none         &none           &mmv MOVE_UP    &none            &studio_unlock                   &kp PAGE_UP    &none      &msc SCRL_UP    &none      &none  &none
-&none              &none         &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none                            &kp PAGE_DOWN  &mkp LCLK  &none           &mkp RCLK  &none  &none
-&none              &none         &none           &none           &none            &caps_word      &tog 3    &none  &none          &none      &msc SCRL_DOWN  &none      &none  &none
-                                 &none           &none           &none            &none           &none     &none  &none          &none      &none           &none
+&bt BT_CLR_ALL     &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3     &bt BT_SEL 4                    &none          &none      &none           &none      &none  &none
+&ext_power EP_TOG  &none         &none           &mmv MOVE_UP    &none            &studio_unlock                  &kp PAGE_UP    &none      &msc SCRL_UP    &none      &none  &none
+&none              &none         &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none                           &kp PAGE_DOWN  &mkp LCLK  &none           &mkp RCLK  &none  &none
+&none              &none         &none           &none           &none            &caps_word      &to 4    &none  &none          &none      &msc SCRL_DOWN  &none      &none  &none
+                                 &none           &none           &none            &none           &none    &none  &none          &none      &none           &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
